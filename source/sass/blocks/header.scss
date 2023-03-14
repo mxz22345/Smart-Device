@@ -1,0 +1,41 @@
+.header__container {
+  display: flex;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  min-height: 120px;
+
+  @media (max-width: $vp-768) {
+    min-height: 70px;
+  }
+}
+
+.header__wrapper-logo {
+  padding-top: 30px;
+  padding-right: 160px;
+  padding-left: 310px;
+
+  @media (max-width: $vp-1600) {
+    padding-left: 200px;
+    padding-right: 100px;
+  }
+
+  @media (max-width: $vp-1440) {
+    padding-left: 150px;
+    padding-right: 80px;
+  }
+
+  @media (max-width: $vp-1280) {
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: $vp-1024) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: $vp-768) {
+    padding-left: 9px;
+    padding-top: 15px;
+  }
+}
+
