@@ -1,7 +1,9 @@
 .nav {
+  z-index: 2;
+  position: relative;
   display: flex;
 
-  @media (max-width: $vp-1280) {
+  @media (max-width: $vp-1024) {
     margin-left: auto;
     padding-right: 50px;
   }
@@ -12,8 +14,8 @@
   }
 }
 
-.nav__icon--text {
-  @media (max-width: $vp-1280) {
+.nav__item span {
+  @media (max-width: $vp-1024) {
     display: none;
   }
 }
@@ -26,6 +28,10 @@
   row-gap: 20px;
 
   @media (max-width: $vp-1280) {
+    column-gap: 5px;
+  }
+
+  @media (max-width: $vp-1024) {
     grid-template-columns: 40px 40px;
     column-gap: 10px;
     row-gap: 10px;
@@ -37,14 +43,13 @@
   }
 }
 
-.nav__link {
+.nav__item a {
   display: flex;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $color-alice-blue;
 
-  @media (max-width: $vp-1280) {
+  @media (max-width: $vp-1024) {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -54,12 +59,17 @@
   display: block;
   margin-right: 15px;
 
-  @media (max-width: $vp-1280) {
+  @media (max-width: $vp-1024) {
     margin: auto;
   }
 }
 
 .nav__button {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
   margin-top: 35px;
   margin-left: 142px;
   width: 160px;
@@ -78,6 +88,10 @@
   }
 
   @media (max-width: $vp-1280) {
+    margin-left: 40px;
+  }
+
+  @media (max-width: $vp-1024) {
     display: none;
   }
 }

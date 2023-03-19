@@ -1,0 +1,16 @@
+.social__list {
+  display: grid;
+  grid-template-columns: 30px 30px 30px;
+  column-gap: 25px;
+  row-gap: 20px;
+  padding-top: 40px;
+  padding-left: 10px;
+
+  @media (max-width: $vp-1024) {
+    padding: 0;
+  }
+
+  @media (max-width: $vp-768) {
+    padding-left: 42px;
+  }
+}
