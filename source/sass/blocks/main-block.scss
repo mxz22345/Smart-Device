@@ -1,9 +1,22 @@
 .main-block__container {
   background-image: url("../img/main-block.jpg");
   min-height: 880px;
+  width: 100%;
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: $color-default-black;
+
+  @media (max-width: $vp-1024) {
+    min-height: 640px;
+    background-size: 100%;
+    background-image: url("../img/main-block-tablet.png");
+  }
+
+  @media (max-width: $vp-768) {
+    min-height: 490px;
+    background-image: url("../img/main-block-mobile.png");
+  }
 }
 
 .main-block__container::before {
@@ -23,9 +36,29 @@
   width: 970px;
   margin: auto;
   padding-top: 185px;
+
+  @media (max-width: $vp-1680) {
+    width: 65%;
+  }
+
+  @media (max-width: $vp-1024) {
+    width: 670px;
+    padding-top: 80px;
+  }
+
+  @media (max-width: $vp-768) {
+    width: 84%;
+  }
+}
+
+.main-block__button span {
+  @media (max-width: $vp-768) {
+    display: none;
+  }
 }
 
 .main-block__button {
+  position: relative;
   background: #00B2FF;
   border-radius: 3px;
   color: $color-alice-blue;
@@ -36,10 +69,33 @@
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
+  cursor: pointer;
+
+  @media (max-width: $vp-1024) {
+    margin-left: 30px;
+  }
+
+  @media (max-width: $vp-768) {
+    margin: auto;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.main-block__button::before {
+  @media (max-width: $vp-768) {
+    content: "бесплатная консультация";
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .main-block__wrapper p {
-  margin: 0;
+  margin: auto;
   padding-top: 40px;
   padding-bottom: 40px;
   width: 685px;
@@ -47,6 +103,14 @@
   font-size: 22px;
   line-height: 155%;
   color: $color-alice-blue;
+
+  @media (max-width: $vp-1680) {
+    width: 100%;
+  }
+
+  @media (max-width: $vp-768) {
+    font-size: 14px;
+  }
 }
 
 .main-block__wrapper h1 {
@@ -57,4 +121,14 @@
   font-size: 80px;
   line-height: 94px;
   color: $color-alice-blue;
+
+  @media (max-width: $vp-1024) {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @media (max-width: $vp-768) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }

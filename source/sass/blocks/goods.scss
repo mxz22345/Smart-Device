@@ -1,0 +1,167 @@
+.goods__container {
+  background-color: $color-black-pearl;
+}
+
+.goods__wrapper {
+  width: 1220px;
+  margin: auto;
+
+  @media (max-width: $vp-1440) {
+    width: 85%;
+  }
+
+  @media (max-width: $vp-1024) {
+    width: 670px;
+  }
+}
+
+.goods__list {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  column-gap: 85px;
+  row-gap: 30px;
+  padding-bottom: 140px;
+
+  @media (max-width: $vp-1440) {
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+  }
+
+  @media (max-width: $vp-1024) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+  }
+}
+
+.goods__wrapper h2{
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  color: $color-default-white;
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  @media (max-width: $vp-1024) {
+    padding-top: 60px;
+  }
+}
+
+.goods__wrapper h3 {
+  width: 210px;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-family: 'Roboto Condensed';
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-default-white;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+
+  @media (max-width: $vp-1024) {
+    padding-top: 40px;
+    padding-left: 45px
+  }
+}
+
+.goods__item {
+  position: relative;
+  cursor: pointer;
+}
+
+.goods__decoration {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: $color-deep-sky-blue;
+  border-radius: 3px 0px 0px 0px;
+}
+
+.goods__icon {
+  margin-left: 30px;
+  margin-top: 26px;
+}
+
+.goods__wrapper-production::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+}
+
+.goods__wrapper-production {
+  background-image: url("../img/production.jpg");
+  min-height: 650px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-default-black;
+
+  @media (max-width: $vp-1024) {
+    background-image: url("../img/production-tablet.png");
+    min-height: 250px;
+  }
+}
+
+.goods__wrapper-installation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+}
+
+.goods__wrapper-installation {
+  background-image: url("../img/installation.jpg");
+  min-height: 650px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-default-black;
+
+
+  @media (max-width: $vp-1024) {
+    background-image: url("../img/installation-tablet.png");
+    min-height: 250px;
+  }
+}
+
+.goods__wrapper-lighting::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+}
+
+.goods__wrapper-lighting {
+  background-image: url("../img/lighting.jpg");
+  min-height: 650px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-default-black;
+
+
+  @media (max-width: $vp-1024) {
+    background-image: url("../img/lighting-tablet.png");
+    min-height: 250px;
+  }
+}

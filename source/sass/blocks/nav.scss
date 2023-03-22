@@ -78,6 +78,7 @@
   border-radius: 3px;
   background-color: $color-transparent;
   color: $color-alice-blue;
+  cursor: pointer;
 
   @media (max-width: $vp-1600) {
     margin-left: 100px;
