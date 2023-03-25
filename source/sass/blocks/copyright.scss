@@ -21,6 +21,7 @@
   display: none;
 
   @media (max-width: $vp-375) {
+    position: relative;
     display: block;
     cursor: pointer;
     border: 0;
@@ -40,10 +41,49 @@
   }
 }
 
+.copyright__button-icon--plus {
+  display: none;
+
+  @media (max-width: $vp-375) {
+    display: block;
+    position: absolute;
+    background-image: url("../../img/svg/plus.svg");
+    width: 15px;
+    height: 15px;
+    top: -2px;
+  }
+}
+
+.copyright__list--open {
+  @media (max-width: $vp-375) {
+    display: block;
+  }
+}
+
+.copyright__list--closed {
+  @media (max-width: $vp-375) {
+    display: none;
+  }
+}
+
+.copyright__button-icon--minus {
+  display: none;
+
+  @media (max-width: $vp-375) {
+    position: absolute;
+    display: block;
+    background-image: url("../../img/svg/minus.svg");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+  }
+}
+
 .copyright__wrapper-button {
   @media (max-width: $vp-375) {
     display: flex;
     flex-wrap: wrap;
+    width: 270px;
   }
 }
 

@@ -78,6 +78,9 @@
           <symbol viewBox="0 0 5 10" id="icon-arrow">
             <path d="M0.476196 8.80957L4.28572 5.00005L0.476196 1.19052" fill="#FFFFFF"/>
           </symbol>
+          <symbol viewBox="0 0 20 20" id="icon-cross">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.177086 1.03109C-0.0587882 0.795211 -0.0587881 0.412781 0.177087 0.176905C0.412961 -0.0589705 0.79539 -0.0589706 1.03126 0.176905L10.0001 9.14577L18.9689 0.17691C19.2048 -0.0589655 19.5872 -0.0589653 19.8231 0.176911C20.059 0.412786 20.059 0.795217 19.8231 1.03109L10.8543 9.99996L19.8232 18.9689C20.0591 19.2048 20.0591 19.5872 19.8232 19.8231C19.5873 20.059 19.2049 20.059 18.969 19.8231L10.0001 10.8541L1.03118 19.8231C0.795303 20.059 0.412874 20.059 0.176999 19.8231C-0.0588753 19.5872 -0.0588755 19.2048 0.176999 18.9689L9.14592 9.99996L0.177086 1.03109Z" fill="white"/>
+          </symbol>
         </svg>
       </div>
       <header class="header">
@@ -196,7 +199,7 @@
                     Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),
                     МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
                   </p>
-                  <div class="info-company__wrapper-additional">
+                  <div class="info-company__additional visually-hidden">
                     <p>
                       Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов,
                       70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается
@@ -266,39 +269,41 @@
                 <div class="feedback__wrapper">
                   <h2>Остались вопросы? Задайте их нам!</h2>
                   <p>Мы проконсультируем Вас бесплатно</p>
-                  <fieldset class="feedback__fieldset">
-                      <input
-                        class="feedback__input"
-                        placeholder="Имя"
-                        type="text"
-                        name="feedback__name"
-                        id="feedback__name"
-                        required
-                      >
-                      <input
-                        class="feedback__input"
-                        placeholder="Телефон"
-                        type="tel"
-                        name="feedback__telephone"
-                        id="feedback__telephone"
-                        required
-                      >
-                      <textarea class="feedback__textareat" name="comment" id="feedback__field" rows="8">
-                        Ваш вопрос
-                      </textarea>
-                      <div class="feedback__wrapper-button">
-                        <button class="feedback__button" type="button">
-                          Задать вопрос
-                        </button>
-                        <label class="feedback__control">
-                          <input class="feedback__control-input" type="checkbox" name="feedback" value="agreement">
-                          <span class="feedback__control-checkmark"></span>
-                          <span class="feedback__control-label">
-                            Я согласен на обработку  персональных данных
-                          </span>
-                        </label>
-                      </div>
-                  </fieldset>
+                  <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <fieldset class="feedback__fieldset">
+                        <input
+                          class="feedback__input"
+                          placeholder="Имя"
+                          type="text"
+                          name="feedback__name"
+                          id="feedback__name"
+                          required
+                        >
+                        <input
+                          class="feedback__input"
+                          placeholder="Телефон"
+                          type="tel"
+                          name="feedback__telephone"
+                          id="feedback__telephone"
+                          required
+                        >
+                        <textarea class="feedback__textareat" name="comment" id="feedback__field" rows="8">
+                          Ваш вопрос
+                        </textarea>
+                        <div class="feedback__wrapper-button">
+                          <button class="feedback__button" type="submit">
+                            Задать вопрос
+                          </button>
+                          <label class="feedback__control">
+                            <input class="feedback__control-input visually-hidden" type="checkbox" name="feedback" value="agreement">
+                            <span class="feedback__control-checkmark"></span>
+                            <span class="feedback__control-label">
+                              Я согласен на обработку  персональных данных
+                            </span>
+                          </label>
+                        </div>
+                    </fieldset>
+                  </form>
                 </div>
               </div>
             </div>
@@ -347,14 +352,12 @@
           <div class="footer__wrapper-info">
             <div class="footer__sections-site sections-site">
               <div class="sections-site__wrapper-button">
-                  <h4>Разделы сайта</h4>
-                  <button class="sections-site__button">
-                    <svg class="sections-site__button-icon" width="15" height="15">
-                      <use xlink:href="#icon-plus"></use>
-                    </svg>
-                  </button>
+                <h4>Разделы сайта</h4>
+                <button class="sections-site__button">
+                  <span class="sections-site__button-icon sections-site__button-icon--plus"></span>
+                </button>
               </div>
-              <ul class="sections-site__list clear-list">
+              <ul class="sections-site__list clear-list sections-site__list-open">
                 <li class="sections-site__item">
                   <div class="first-column">
                     <ul class="first-column__list clear-list">
@@ -408,12 +411,10 @@
               <div class="copyright__wrapper-button">
                 <h4>Наш офис</h4>
                 <button class="copyright__button">
-                  <svg class="copyright__button-icon" width="15" height="15">
-                    <use xlink:href="#icon-plus"></use>
-                  </svg>
+                  <span class="copyright__button-icon copyright__button-icon--minus"></span>
                 </button>
               </div>
-              <ul class="copyright__list clear-list copyright__list--open">
+              <ul class="copyright__list clear-list copyright__list--closed">
                 <li class="copyright__item">
                   <a href="#">
                     г. Мытищи, Олимпийский проспект, д.10
@@ -441,31 +442,51 @@
       </footer>
     </div>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+    <div class="modal-call visually-hidden">
+      <div class="modal-call__container">
+        <button class="modal-call__button-close">
+          <svg class="modal-call__icon" width="20" height="20">
+            <use xlink:href="#icon-cross"></use>
+          </svg>
+        </button>
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <div class="modal-call__wrapper">
+          <form class="modal-call__form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="modal-call__fieldset">
+                <input
+                  class="modal-call__input"
+                  placeholder="Имя"
+                  type="text"
+                  name="modal-call__name"
+                  id="modal-call__name"
+                  required
+                >
+                <input
+                  class="modal-call__input"
+                  placeholder="Телефон"
+                  type="tel"
+                  name="modal-call__telephone"
+                  id="modal-call__telephone"
+                  required
+                >
+                <textarea class="modal-call__textareat" name="comment" id="modal-call__field" rows="8">
+                  Ваш вопрос
+                </textarea>
+                <div class="modal-call__wrapper-button">
+                  <button class="modal-call__button" type="submit">
+                    Задать вопрос
+                  </button>
+                  <label class="modal-call__control">
+                    <input class="modal-call__control-input visually-hidden" type="checkbox" name="modal-call" value="agreement">
+                    <span class="modal-call__control-checkmark"></span>
+                    <span class="modal-call__control-label">
+                      Я согласен на обработку  персональных данных
+                    </span>
+                  </label>
+                </div>
+            </fieldset>
+          </form>
         </div>
       </div>
     </div>
