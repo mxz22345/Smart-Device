@@ -828,15 +828,15 @@ button,
   width: 420px;
 }
 
-.page__body p {
+.page p {
   font-family: "PT Mono", "Arial", sans-serif;
 }
 
-.page__body {
+.page {
   background-color: #E5E5E5;
 }
 
-.page__body a {
+.page a {
   font-family: "PT Mono", "Arial", sans-serif;
 }
 
