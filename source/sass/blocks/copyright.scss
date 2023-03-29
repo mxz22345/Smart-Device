@@ -3,11 +3,12 @@
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 135%;
-  color: rgba(255, 255, 255, 0.7);
+  color: $color-default-white;
+  opacity: 0.7;
 }
 
 .copyright h4 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   padding-bottom: 20px;
   margin: 0;
   font-weight: 400;
@@ -61,6 +62,7 @@
 }
 
 .copyright__list--closed {
+  display: block;
   @media (max-width: $vp-375) {
     display: none;
   }

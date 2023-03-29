@@ -1,21 +1,37 @@
 .main-block__container {
-  background-image: url("../img/main-block.jpg");
+  background-image: image-set(
+    url("../img/main-block@2x.webp") 2x,
+    url("../img/main-block.webp") 1x,
+    url("../img/main-block@2x.jpg") 2x,
+    url("../img/main-block.jpg") 1x,
+    );
   min-height: 880px;
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: $color-default-black;
+  background-color: $color-black-pearl;
 
   @media (max-width: $vp-1024) {
     min-height: 640px;
     background-size: 100%;
-    background-image: url("../img/main-block-tablet.png");
+    background-image: image-set(
+      url("../img/main-block-tablet@2x.webp") 2x,
+      url("../img/main-block-tablet.webp") 1x,
+      url("../img/main-block-tablet@2x.png") 2x,
+      url("../img/main-block-tablet.png") 1x,
+      );
   }
 
   @media (max-width: $vp-768) {
     min-height: 490px;
-    background-image: url("../img/main-block-mobile.png");
+    background-image: image-set(
+      url("../img/main-block-mobile@2x.webp") 2x,
+      url("../img/main-block-mobile.webp") 1x,
+      url("../img/main-block-mobile@2x.png") 2x,
+      url("../img/main-block-mobile.png") 1x,
+    );
+    background-size: 100%;
   }
 }
 
@@ -68,7 +84,7 @@
   color: $color-alice-blue;
   width: 410px;
   height: 55px;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -123,7 +139,7 @@
 .main-block__wrapper h1 {
   margin: 0;
   text-transform: uppercase;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;

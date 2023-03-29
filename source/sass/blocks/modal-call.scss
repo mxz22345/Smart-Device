@@ -13,7 +13,7 @@
   margin: 0;
   padding-top: 40px;
   padding-bottom: 15px;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 30px;
   color: $color-default-white;
   line-height: 140.62%;
@@ -63,7 +63,7 @@
   display: flex;
   padding-top: 20px;
   padding-bottom: 40px;
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: $color-default-white;
@@ -81,7 +81,7 @@
   height: 45px;
   background: $color-black-pearl;
   border-radius: 3px;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -107,7 +107,11 @@
   border-radius: 2px;
 }
 
-.modal-call__input {
+.modal-call__fieldset input::placeholder {
+  color: $color-default-white;
+}
+
+.modal-call__fieldset input {
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   width: 420px;
@@ -127,8 +131,8 @@
   border: 0;
 }
 
-.modal-call__textareat {
-  font-family: 'PT Mono';
+.modal-call__form textarea {
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -143,5 +147,5 @@
   border: 0;
   resize: horizontal;
   width: 420px;
+  height: 155px;
 }
-

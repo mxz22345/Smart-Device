@@ -7,6 +7,9 @@
     <meta name="description" content="Описание проекта">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
@@ -183,7 +186,7 @@
             <div class="info-company__container container">
               <div class="info-company__wrapper">
                 <picture class="info-company__picture">
-                  <source type="image/webp" srcset=".//img/2022.png, ./img/2022@2x.png 2x">
+                  <source type="image/webp" srcset="./img/2022.webp, ./img/2022@2x.webp 2x">
                   <img class="info-company__img" src="./img/2022.png" srcset="./img/2022@2x.png 2x" alt="2022" width="150" height="320">
                 </picture>
                 <div class="info-company__wrapper-text">
@@ -263,7 +266,7 @@
             <div class="feedback__container container">
               <div class="feedback__wrapper-img">
                 <picture class="feedback__picture">
-                  <source type="image/webp" srcset="./img/paper-airplane.png, ./img/paper-airplane@2x.png 2x">
+                  <source type="image/webp" srcset="./img/paper-airplane.webp, ./img/paper-airplane@2x.webp 2x">
                   <img class="feedback__img" src="./img/paper-airplane.png" srcset="./img/paper-airplane@2x.png 2x" alt="картинка бумажного самолетикика">
                 </picture>
                 <div class="feedback__wrapper">
@@ -272,7 +275,6 @@
                   <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
                     <fieldset class="feedback__fieldset">
                         <input
-                          class="feedback__input"
                           placeholder="Имя"
                           type="text"
                           name="feedback__name"
@@ -280,16 +282,13 @@
                           required
                         >
                         <input
-                          class="feedback__input"
                           placeholder="Телефон"
                           type="tel"
                           name="feedback__telephone"
                           id="feedback__telephone"
                           required
                         >
-                        <textarea class="feedback__textareat" name="comment" id="feedback__field" rows="8">
-                          Ваш вопрос
-                        </textarea>
+                        <textarea name="comment" id="feedback__field" rows="8">Ваш вопроc</textarea>
                         <div class="feedback__wrapper-button">
                           <button class="feedback__button" type="submit">
                             Задать вопрос
@@ -354,7 +353,7 @@
               <div class="sections-site__wrapper-button">
                 <h4>Разделы сайта</h4>
                 <button class="sections-site__button">
-                  <span class="sections-site__button-icon sections-site__button-icon--plus"></span>
+                  <span class="sections-site__button-icon sections-site__button-icon--minus"></span>
                 </button>
               </div>
               <ul class="sections-site__list clear-list sections-site__list-open">
@@ -414,7 +413,7 @@
                   <span class="copyright__button-icon copyright__button-icon--minus"></span>
                 </button>
               </div>
-              <ul class="copyright__list clear-list copyright__list--closed">
+              <ul class="copyright__list clear-list copyright__list--open">
                 <li class="copyright__item">
                   <a href="#">
                     г. Мытищи, Олимпийский проспект, д.10
@@ -455,7 +454,6 @@
           <form class="modal-call__form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="modal-call__fieldset">
                 <input
-                  class="modal-call__input"
                   placeholder="Имя"
                   type="text"
                   name="modal-call__name"
@@ -463,16 +461,13 @@
                   required
                 >
                 <input
-                  class="modal-call__input"
                   placeholder="Телефон"
                   type="tel"
                   name="modal-call__telephone"
                   id="modal-call__telephone"
                   required
                 >
-                <textarea class="modal-call__textareat" name="comment" id="modal-call__field" rows="8">
-                  Ваш вопрос
-                </textarea>
+                <textarea name="comment" id="modal-call__field" rows="8">Ваш вопрос</textarea>
                 <div class="modal-call__wrapper-button">
                   <button class="modal-call__button" type="submit">
                     Задать вопрос

@@ -10,7 +10,7 @@
     width: 260px;
     font-size: 28px;
     line-height: 140.62%;
-    font-family: 'Roboto Condensed';
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     color: $color-default-white;
     padding-bottom: 10px;
     padding-top: 50px;
@@ -65,7 +65,7 @@
 
 .goods__wrapper h2{
   margin: 0;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
   font-weight: 400;
@@ -86,7 +86,7 @@
   width: 210px;
   padding-top: 50px;
   padding-left: 40px;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
   color: $color-default-white;
@@ -144,7 +144,12 @@
 }
 
 .goods__wrapper-production {
-  background-image: url("../img/production.jpg");
+  background-image: image-set(
+    url("../img/production@2x.webp") 2x,
+    url("../img/production.webp") 1x,
+    url("../img/production@2x.jpg") 2x,
+    url("../img/production.jpg") 1x,
+  );
   min-height: 650px;
   position: relative;
   background-repeat: no-repeat;
@@ -152,13 +157,23 @@
   background-color: $color-default-black;
 
   @media (max-width: $vp-1024) {
-    background-image: url("../img/production-tablet.png");
+    background-image: image-set(
+      url("../img/production-tablet@2x.webp") 2x,
+      url("../img/production-tablet.webp") 1x,
+      url("../img/production-tablet@2x.jpg") 2x,
+      url("../img/production-tablet.png") 1x,
+    );
     min-height: 250px;
+    background-size: 100%;
   }
 
   @media (max-width: $vp-768) {
-    background-image: url("../img/production-mobile.png");
-    background-size: 100%;
+    background-image: image-set(
+      url("../img/production-mobile@2x.webp") 2x,
+      url("../img/production-mobile.webp") 1x,
+      url("../img/production-mobile@2x.jpg") 2x,
+      url("../img/production-mobile.png") 1x,
+    );
   }
 }
 
@@ -174,7 +189,12 @@
 }
 
 .goods__wrapper-installation {
-  background-image: url("../img/installation.jpg");
+  background-image: image-set(
+    url("../img/installation@2x.webp") 2x,
+    url("../img/installation.webp") 1x,
+    url("../img/installation@2x.jpg") 2x,
+    url("../img/installation.jpg") 1x,
+  );
   min-height: 650px;
   position: relative;
   background-repeat: no-repeat;
@@ -183,13 +203,23 @@
 
 
   @media (max-width: $vp-1024) {
-    background-image: url("../img/installation-tablet.png");
+    background-image: image-set(
+      url("../img/installation-tablet@2x.webp") 2x,
+      url("../img/installation-tablet.webp") 1x,
+      url("../img/installation-tablet@2x.jpg") 2x,
+      url("../img/installation-tablet.png") 1x,
+    );
     min-height: 250px;
+    background-size: 100%;
   }
 
   @media (max-width: $vp-768) {
-    background-image: url("../img/installation-mobile.png");
-    background-size: 100%;
+    background-image: image-set(
+      url("../img/installation-mobile@2x.webp") 2x,
+      url("../img/installation-mobile.webp") 1x,
+      url("../img/installation-mobile@2x.jpg") 2x,
+      url("../img/installation-mobile.png") 1x,
+    )
   }
 }
 
@@ -205,7 +235,12 @@
 }
 
 .goods__wrapper-lighting {
-  background-image: url("../img/lighting.jpg");
+  background-image: image-set(
+    url("../img/lighting@2x.webp") 2x,
+    url("../img/lighting.webp") 1x,
+    url("../img/lighting@2x.jpg") 2x,
+    url("../img/lighting.jpg") 1x,
+  );
   min-height: 650px;
   position: relative;
   background-repeat: no-repeat;
@@ -214,12 +249,22 @@
 
 
   @media (max-width: $vp-1024) {
-    background-image: url("../img/lighting-tablet.png");
+    background-image: image-set(
+      url("../img/lighting-tablet@2x.webp") 2x,
+      url("../img/lighting-tablet.webp") 1x,
+      url("../img/lighting-tablet@2x.jpg") 2x,
+      url("../img/lighting-tablet.png") 1x,
+    );
     min-height: 250px;
+    background-size: 100%;
   }
 
   @media (max-width: $vp-768) {
-    background-image: url("../img/lighting-mobile.png");
-    background-size: 100%;
+    background-image: image-set(
+      url("../img/lighting-mobile@2x.webp") 2x,
+      url("../img/lighting-mobile.webp") 1x,
+      url("../img/lighting-mobile@2x.jpg") 2x,
+      url("../img/lighting-mobile.png") 1x,
+    );
   }
 }

@@ -20,6 +20,13 @@
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
 
+.header__logo-image {
+  @media (max-width: $vp-768) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 .header__wrapper-logo {
   z-index: 2;
   padding-top: 30px;
@@ -55,4 +62,3 @@
     padding-top: 15px;
   }
 }
-

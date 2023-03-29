@@ -1,6 +1,5 @@
-
 .sections-site h4 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   margin: 0;
   padding-bottom: 20px;
   font-weight: 400;
@@ -66,7 +65,8 @@
   font-size: 16px;
   line-height: 135%;
   text-transform: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: $color-default-white;
+  opacity: 0.7;
 }
 
 .sections-site__list {

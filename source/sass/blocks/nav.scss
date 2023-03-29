@@ -47,7 +47,8 @@
   display: flex;
   font-size: 16px;
   line-height: 18px;
-  color: $color-alice-blue;
+  color: $color-default-white;
+  opacity: 0.7;
 
   @media (max-width: $vp-1024) {
     padding-top: 10px;
@@ -65,7 +66,7 @@
 }
 
 .nav__button {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
