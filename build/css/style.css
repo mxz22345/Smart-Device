@@ -977,7 +977,7 @@ button,
 
 .main-block__button {
   position: relative;
-  background: #00B2FF;
+  background: #00b2ff;
   border-radius: 3px;
   color: #f2f5f7;
   width: 410px;
@@ -1197,7 +1197,7 @@ button,
   width: 60px;
   height: 60px;
   background: #00b2ff;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
 }
 
 .goods__icon {
@@ -1562,10 +1562,6 @@ button,
 
 .copyright__button-icon--plus {
   display: none;
-}
-
-.copyright__list--closed {
-  display: block;
 }
 
 .copyright__button-icon--minus {
@@ -2342,21 +2338,12 @@ button,
     top: -2px;
   }
 
-  .copyright__list--open {
-    display: block;
-  }
-
-  .copyright__list--closed {
-    display: none;
-  }
-
   .copyright__button-icon--minus {
-    position: absolute;
     display: block;
     background-image: url("../../img/svg/minus.svg");
     background-repeat: no-repeat;
     width: 15px;
-    height: 15px;
+    height: 2px;
   }
 
   .copyright__wrapper-button {

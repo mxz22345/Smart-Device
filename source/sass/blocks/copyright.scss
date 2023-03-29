@@ -55,29 +55,15 @@
   }
 }
 
-.copyright__list--open {
-  @media (max-width: $vp-375) {
-    display: block;
-  }
-}
-
-.copyright__list--closed {
-  display: block;
-  @media (max-width: $vp-375) {
-    display: none;
-  }
-}
-
 .copyright__button-icon--minus {
   display: none;
 
   @media (max-width: $vp-375) {
-    position: absolute;
     display: block;
     background-image: url("../../img/svg/minus.svg");
     background-repeat: no-repeat;
     width: 15px;
-    height: 15px;
+    height: 2px;
   }
 }
 
@@ -96,7 +82,7 @@
     left: -55px;
     width: 380px;
     height: 1px;
-    background-color: rgba(248, 253, 255, 0.7);;
+    background-color: rgba(248, 253, 255, 0.7);
   }
 }
 

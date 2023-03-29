@@ -52,7 +52,7 @@
 
 .footer__wrapper-info {
   display: grid;
-  grid-template-columns: 470px 345px ;
+  grid-template-columns: 470px 345px;
   column-gap: 30px;
   row-gap: 20px;
   padding-top: 55px;
@@ -69,7 +69,7 @@
   @media (max-width: $vp-1024) {
     padding-left: 0;
     margin: auto;
-    grid-template-columns: 220px 345px ;
+    grid-template-columns: 220px 345px;
     column-gap: 130px;
     padding-top: 40px;
     padding-bottom: 55px;

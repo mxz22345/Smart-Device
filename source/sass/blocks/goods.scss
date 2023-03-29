@@ -63,7 +63,7 @@
   }
 }
 
-.goods__wrapper h2{
+.goods__wrapper h2 {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -96,12 +96,12 @@
 
   @media (max-width: $vp-1024) {
     padding-top: 40px;
-    padding-left: 45px
+    padding-left: 45px;
   }
 
   @media (max-width: $vp-768) {
     padding-top: 30px;
-    padding-left: 30px
+    padding-left: 30px;
   }
 
   @media (max-width: $vp-375) {
@@ -124,7 +124,7 @@
   width: 60px;
   height: 60px;
   background: $color-deep-sky-blue;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
 }
 
 .goods__icon {
@@ -219,7 +219,7 @@
       url("../img/installation-mobile.webp") 1x,
       url("../img/installation-mobile@2x.jpg") 2x,
       url("../img/installation-mobile.png") 1x,
-    )
+    );
   }
 }
 
