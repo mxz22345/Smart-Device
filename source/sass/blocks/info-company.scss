@@ -7,6 +7,7 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0;
+  font-weight: 400;
   color: $color-black-pearl;
 
   @media (max-width: $vp-768) {
@@ -28,15 +29,22 @@
   background-color: $color-transparent;
   color: $color-deep-sky-blue;
   cursor: pointer;
+  margin-top: 32px;
+  letter-spacing: 0.05em;
+
+  @media (max-width: $vp-1024) {
+    margin-top: 8px;
+  }
 
   @media (max-width: $vp-768) {
     width: 160px;
     height: 35px;
+    margin-top: 0;
   }
 }
 
 .info-company__wrapper {
-  padding-top: 95px;
+  padding-top: 90px;
   padding-bottom: 100px;
   width: 1220px;
   display: flex;
@@ -53,7 +61,9 @@
   @media (max-width: $vp-1024) {
     width: 674px;
     margin: 0;
-    margin-left: 2%;
+    margin-left: 20px;
+    padding-top: 44px;
+    padding-bottom: 80px;
   }
 
   @media (max-width: $vp-768) {
@@ -99,8 +109,8 @@
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 8px;
 
   @media (max-width: $vp-768) {
     font-size: 14px;

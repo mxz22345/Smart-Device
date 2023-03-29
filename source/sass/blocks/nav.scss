@@ -33,9 +33,9 @@
 
   @media (max-width: $vp-1024) {
     grid-template-columns: 40px 40px;
-    column-gap: 10px;
+    column-gap: 15px;
     row-gap: 10px;
-    padding-top: 35px;
+    padding-top: 20px;
   }
 
   @media (max-width: $vp-768) {
@@ -80,6 +80,7 @@
   background-color: $color-transparent;
   color: $color-alice-blue;
   cursor: pointer;
+  letter-spacing: 0.05em;
 
   @media (max-width: $vp-1600) {
     margin-left: 100px;

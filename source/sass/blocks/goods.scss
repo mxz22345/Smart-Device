@@ -65,16 +65,18 @@
 
 .goods__wrapper h2 {
   margin: 0;
+  font-weight: 400;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
   font-weight: 400;
   color: $color-default-white;
-  padding-top: 70px;
+  padding-top: 68px;
   padding-bottom: 50px;
 
   @media (max-width: $vp-1024) {
     padding-top: 60px;
+    padding-bottom: 30px;
   }
 
   @media (max-width: $vp-768) {
@@ -84,6 +86,7 @@
 
 .goods__wrapper h3 {
   width: 210px;
+  font-weight: 400;
   padding-top: 50px;
   padding-left: 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -97,15 +100,16 @@
   @media (max-width: $vp-1024) {
     padding-top: 40px;
     padding-left: 45px;
+    width: 195px;
   }
 
   @media (max-width: $vp-768) {
+    width: 165px;
     padding-top: 30px;
     padding-left: 30px;
   }
 
   @media (max-width: $vp-375) {
-    width: 165px;
     font-size: 18px;
     line-height: 30px;
   }
