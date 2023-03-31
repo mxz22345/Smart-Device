@@ -830,7 +830,7 @@ button,
   border: 0;
 }
 
-.modal-call__form textarea {
+.modal-call__textarea textarea {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1293,7 +1293,6 @@ button,
   display: -ms-flexbox;
   display: flex;
   margin-top: 170px;
-  margin-bottom: 240px;
   margin-left: 309px;
   width: 1210px;
 }
@@ -1327,6 +1326,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding-bottom: 250px;
 }
 
 .feedback__button {
@@ -1431,7 +1431,7 @@ button,
   flex-wrap: wrap;
 }
 
-.feedback__form textarea {
+.feedback__textarea textarea {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1977,7 +1977,7 @@ button,
     margin-left: 0;
   }
 
-  .feedback__form textarea {
+  .feedback__textarea textarea {
     width: 670px;
     padding-top: 35px;
   }
@@ -2247,7 +2247,7 @@ button,
     width: 100%;
   }
 
-  .feedback__form textarea {
+  .feedback__textarea textarea {
     width: 100%;
     height: 180px;
   }
@@ -2322,7 +2322,7 @@ button,
     width: 270px;
   }
 
-  .feedback__form textarea {
+  .feedback__textarea textarea {
     width: 270px;
   }
 

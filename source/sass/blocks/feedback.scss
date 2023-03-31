@@ -26,7 +26,6 @@
 .feedback__wrapper-img {
   display: flex;
   margin-top: 170px;
-  margin-bottom: 240px;
   margin-left: 309px;
   width: 1210px;
 
@@ -87,6 +86,7 @@
 .feedback__wrapper-button {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 250px;
 
   @media (max-width: $vp-1024) {
     padding-bottom: 125px;
@@ -229,7 +229,7 @@
   flex-wrap: wrap;
 }
 
-.feedback__form textarea {
+.feedback__textarea textarea {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
