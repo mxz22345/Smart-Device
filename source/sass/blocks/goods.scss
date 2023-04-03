@@ -55,7 +55,7 @@
   @media (max-width: $vp-1024) {
     display: flex;
     flex-direction: column;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
   }
 
   @media (max-width: $vp-768) {
@@ -75,8 +75,8 @@
   padding-bottom: 50px;
 
   @media (max-width: $vp-1024) {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 55px;
+    padding-bottom: 38px;
   }
 
   @media (max-width: $vp-768) {
@@ -98,7 +98,7 @@
   position: relative;
 
   @media (max-width: $vp-1024) {
-    padding-top: 40px;
+    padding-top: 38px;
     padding-left: 45px;
     width: 195px;
   }
@@ -158,7 +158,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: $color-default-black;
+  background-color: $color-deep-sky-blue;
 
   @media (max-width: $vp-1024) {
     background-image: image-set(
@@ -203,7 +203,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: $color-default-black;
+  background-color: $color-deep-sky-blue;
 
 
   @media (max-width: $vp-1024) {
@@ -249,7 +249,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: $color-default-black;
+  background-color: $color-deep-sky-blue;
 
 
   @media (max-width: $vp-1024) {

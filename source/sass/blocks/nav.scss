@@ -2,6 +2,7 @@
   z-index: 2;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: $vp-1024) {
     margin-left: auto;

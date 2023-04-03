@@ -25,7 +25,7 @@
 
 .feedback__wrapper-img {
   display: flex;
-  margin-top: 170px;
+  margin-top: 167px;
   margin-left: 309px;
   width: 1210px;
 
@@ -35,7 +35,7 @@
   }
 
   @media (max-width: $vp-1024) {
-    margin-top: 50px;
+    margin-top: 45px;
   }
 
   @media (max-width: $vp-768) {
@@ -45,7 +45,7 @@
 }
 
 .feedback__img {
-  margin-top: 67px;
+  margin-top: 79px;
 
   @media (max-width: $vp-1280) {
     display: none;
@@ -61,7 +61,7 @@
 .feedback__control {
   position: relative;
   display: flex;
-  padding-top: 50px;
+  padding-top: 45px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -69,7 +69,7 @@
   width: 260px;
 
   @media (max-width: $vp-1024) {
-    padding-top: 38px;
+    padding-top: 39px;
   }
 
   @media (max-width: $vp-768) {
@@ -86,7 +86,7 @@
 .feedback__wrapper-button {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 250px;
+  padding-bottom: 245px;
 
   @media (max-width: $vp-1024) {
     padding-bottom: 125px;
@@ -116,6 +116,7 @@
 
   @media (max-width: $vp-1024) {
     margin-right: 85px;
+    margin-top: 29px;
   }
 
   @media (max-width: $vp-768) {
@@ -129,18 +130,16 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
-  padding-left: 5px;
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding-top: 12px;
+  padding-bottom: 35px;
 
   @media (max-width: $vp-1024) {
-    padding-left: 0;
-    padding-bottom: 20px;
+    padding-top: 7px;
+    padding-bottom: 26px;
   }
 
   @media (max-width: $vp-768) {
-    padding-left: 0;
     font-size: 14px;
     line-height: 134.4%;
     padding-top: 20px;
@@ -155,14 +154,8 @@
   font-weight: 400;
   color: $color-default-white;
   margin: 0;
-  padding-left: 5px;
-
-  @media (max-width: $vp-1024) {
-    padding-left: 0;
-  }
 
   @media (max-width: $vp-768) {
-    padding-left: 0;
     font-size: 30px;
     line-height: 140.62%;
   }
@@ -182,6 +175,14 @@
   height: 15px;
   border: 1px solid $color-default-white;
   border-radius: 2px;
+
+  @media (max-width: $vp-1024) {
+    bottom: 15px;
+  }
+
+  @media (max-width: $vp-375) {
+    bottom: 10px;
+  }
 }
 
 .feedback__fieldset input::placeholder {
@@ -216,11 +217,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  margin-left: 5px;
-
-  @media (max-width: $vp-1024) {
-    margin-left: 0;
-  }
 }
 
 .feedback__container {
@@ -237,7 +233,7 @@
   line-height: 22px;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  padding-top: 16px;
+  padding-top: 22px;
   padding-bottom: 16px;
   padding-right: 16px;
   padding-left: 16px;
@@ -250,7 +246,7 @@
 
   @media (max-width: $vp-1024) {
     width: 670px;
-    padding-top: 35px;
+    padding-top: 30px;
   }
 
   @media (max-width: $vp-768) {
@@ -264,7 +260,7 @@
 }
 
 .feedback__fieldset input:nth-child(odd) {
-  margin-right: 22px;
+  margin-right: 26px;
 
   @media (max-width: $vp-1280) {
     margin-right: 25px;

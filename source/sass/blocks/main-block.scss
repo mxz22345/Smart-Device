@@ -73,7 +73,10 @@
 
 .main-block__button span {
   @media (max-width: $vp-768) {
-    display: none;
+    display: block;
+    height: 0;
+    width: 0;
+    opacity: 0;
   }
 }
 
@@ -108,6 +111,7 @@
 .main-block__button::before {
   @media (max-width: $vp-768) {
     content: "бесплатная консультация";
+    text-overflow: ellipsis;
     display: block;
     margin: auto;
     font-size: 14px;

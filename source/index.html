@@ -100,7 +100,7 @@
           <nav class="nav">
             <ul class="nav__list clear-list">
               <li class="nav__item">
-                <a href="mailto:info@sd.ru">
+                <a href="mailto:info@sd.ru" aria-label="наша почта">
                   <svg class="nav__icon" width="20" height="20">
                     <use xlink:href="#icon-email"></use>
                   </svg>
@@ -108,7 +108,7 @@
                 </a>
               </li>
               <li class="nav__item">
-                <a href="tel:+74950005252">
+                <a href="tel:+74950005252" aria-label="наш телефон">
                   <svg class="nav__icon" width="20" height="20">
                     <use xlink:href="#icon-tel"></use>
                   </svg>
@@ -116,9 +116,7 @@
                 </a>
               </li>
             </ul>
-            <button class="nav__button" type="button">
-              Заказать звонок
-            </button>
+            <button class="nav__button" type="button">Заказать звонок</button>
           </nav>
         </div>
       </header>
@@ -267,7 +265,7 @@
               <div class="feedback__wrapper-img">
                 <picture class="feedback__picture">
                   <source type="image/webp" srcset="./img/paper-airplane.webp, ./img/paper-airplane@2x.webp 2x">
-                  <img class="feedback__img" src="./img/paper-airplane.png" srcset="./img/paper-airplane@2x.png 2x" alt="картинка бумажного самолетикика">
+                  <img class="feedback__img" src="./img/paper-airplane.png" srcset="./img/paper-airplane@2x.png 2x" alt="картинка бумажного самолетикика" width="510" height="285">
                 </picture>
                 <div class="feedback__wrapper">
                   <h2>Остались вопросы? Задайте их нам!</h2>
@@ -353,9 +351,10 @@
           <div class="footer__wrapper-info">
             <div class="footer__sections-site sections-site">
               <div class="sections-site__wrapper-button">
-                <h4>Разделы сайта</h4>
-                <button class="sections-site__button">
+                <h3>Разделы сайта</h3>
+                <button class="sections-site__button" type="button">
                   <span class="sections-site__button-icon sections-site__button-icon--minus"></span>
+                  <span class="visually-hidden">Кнопка переключения состояния</span>
                 </button>
               </div>
               <ul class="sections-site__list clear-list sections-site__list-open">
@@ -410,9 +409,10 @@
             </div>
             <div class="footer__copyright copyright">
               <div class="copyright__wrapper-button">
-                <h4>Наш офис</h4>
-                <button class="copyright__button">
+                <h3>Наш офис</h3>
+                <button class="copyright__button" type="button">
                   <span class="copyright__button-icon copyright__button-icon--minus"></span>
+                  <span class="visually-hidden">Кнопка переключения состояния</span>
                 </button>
               </div>
               <ul class="copyright__list clear-list copyright__list--open">
@@ -445,7 +445,8 @@
 
     <div class="modal-call visually-hidden">
       <div class="modal-call__container">
-        <button class="modal-call__button-close">
+        <button class="modal-call__button-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
           <svg class="modal-call__icon" width="20" height="20">
             <use xlink:href="#icon-cross"></use>
           </svg>
