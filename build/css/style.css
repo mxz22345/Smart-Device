@@ -2008,7 +2008,7 @@ button,
     -webkit-column-gap: 130px;
     -moz-column-gap: 130px;
     column-gap: 130px;
-    padding-top: 45px;
+    padding-top: 30px;
     padding-bottom: 55px;
     margin-left: 25px;
   }
@@ -2314,6 +2314,7 @@ button,
 
   .footer__wrapper-info {
     margin: auto;
+    padding-top: 45px;
     padding-bottom: 35px;
     -ms-grid-columns: 270px;
     grid-template-columns: 270px;
