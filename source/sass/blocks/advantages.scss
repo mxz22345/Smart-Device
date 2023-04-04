@@ -25,6 +25,10 @@
     width: 84%;
     padding-top: 50px;
   }
+
+  @media (max-width: $vp-375) {
+    width: 270px;
+  }
 }
 
 .advantages__item {
@@ -49,6 +53,10 @@
   @media (max-width: $vp-768) {
     width: 100%;
     min-height: 340px;
+  }
+
+  @media (max-width: $vp-375) {
+    width: 270px;
   }
 }
 
@@ -119,6 +127,11 @@
     margin-left: 30px;
     margin-right: 30px;
     padding-bottom: 35px;
+    width: 80%;
+  }
+
+  @media (max-width: $vp-375) {
+    width: 210px;
   }
 }
 
