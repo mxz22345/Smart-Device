@@ -12,8 +12,8 @@
     line-height: 140.62%;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     color: $color-default-white;
-    padding-bottom: 10px;
-    padding-top: 50px;
+    padding-top: 47px;
+    margin: 0;
   }
 }
 
@@ -81,6 +81,7 @@
 
   @media (max-width: $vp-768) {
     display: none;
+    padding-bottom: 20px;
   }
 }
 
@@ -105,7 +106,7 @@
 
   @media (max-width: $vp-768) {
     width: 165px;
-    padding-top: 30px;
+    padding-top: 25px;
     padding-left: 30px;
   }
 
@@ -129,11 +130,21 @@
   height: 60px;
   background: $color-deep-sky-blue;
   border-radius: 3px 0 0 0;
+
+  @media (max-width: $vp-768) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .goods__icon {
   margin-left: 30px;
   margin-top: 26px;
+
+  @media (max-width: $vp-768) {
+    margin-left: 19px;
+    margin-top: 15px;
+  }
 }
 
 .goods__wrapper-production::before {

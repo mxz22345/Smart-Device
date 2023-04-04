@@ -39,7 +39,14 @@
   @media (max-width: $vp-768) {
     width: 160px;
     height: 35px;
-    margin-top: 0;
+    margin-top: 5px;
+  }
+}
+
+.info-company__additional-mobile {
+
+  @media (max-width: $vp-768) {
+    display: none;
   }
 }
 
@@ -70,7 +77,12 @@
     width: 84%;
     margin: auto;
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 82px;
+  }
+
+  @media (max-width: $vp-375) {
+    width: 270px;
+    padding-top: 17px;
   }
 }
 
