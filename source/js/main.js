@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {} from './modules/modals/modals';
 import {} from './modules/buttons/info-button';
 import {} from './modules/buttons/state-change';
+import {} from './modules/buttons/scroll-button';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

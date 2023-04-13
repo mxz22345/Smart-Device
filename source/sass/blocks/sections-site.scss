@@ -13,7 +13,7 @@
 .sections-site__button {
   display: none;
 
-  @media (max-width: $vp-375) {
+  @media (max-width: $vp-768) {
     position: relative;
     display: block;
     cursor: pointer;
@@ -27,7 +27,7 @@
 }
 
 .sections-site__wrapper-button {
-  @media (max-width: $vp-375) {
+  @media (max-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -39,7 +39,7 @@
     position: absolute;
     top: -20px;
     left: -55px;
-    width: 380px;
+    width: 375px;
     height: 1px;
     background-color: rgba(248, 253, 255, 0.7);
   }
@@ -50,7 +50,7 @@
     content: "";
     position: absolute;
     left: -55px;
-    width: 380px;
+    width: 375px;
     height: 1px;
     background-color: rgba(248, 253, 255, 0.7);
   }
@@ -61,8 +61,6 @@
 }
 
 .sections-site a {
-  display: block;
-  margin-bottom: 10px;
   font-size: 16px;
   line-height: 135%;
   text-transform: none;
@@ -83,7 +81,7 @@
 .sections-site__button-icon--plus {
   display: none;
 
-  @media (max-width: $vp-375) {
+  @media (max-width: $vp-768) {
     display: block;
     position: absolute;
     background-image: url("../../img/svg/plus.svg");
@@ -94,13 +92,13 @@
 }
 
 .sections-site__list--open {
-  @media (max-width: $vp-375) {
+  @media (max-width: $vp-768) {
     display: block;
   }
 }
 
 .sections-site__list--closed {
-  @media (max-width: $vp-375) {
+  @media (max-width: $vp-768) {
     display: none;
   }
 }
@@ -108,7 +106,7 @@
 .sections-site__button-icon--minus {
   display: none;
 
-  @media (max-width: $vp-375) {
+  @media (max-width: $vp-768) {
     position: absolute;
     display: block;
     background-image: url("../../img/svg/minus.svg");

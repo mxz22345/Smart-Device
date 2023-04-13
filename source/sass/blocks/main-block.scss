@@ -35,6 +35,10 @@
   }
 }
 
+.main-block  {
+  background-color: $color-whisper;
+}
+
 .main-block__container::before {
   content: "";
   position: absolute;
