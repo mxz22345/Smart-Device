@@ -154,10 +154,16 @@
 }
 
 .advantages__item:hover,
-.advantages__item p:hover,
-.advantages__item h3:hover,
 .advantages__icon:hover {
   color: $color-alice-blue;
   background-color: $color-deep-sky-blue;
   stroke: $color-alice-blue;
+}
+
+.advantages__item:hover p {
+  color: $color-alice-blue;
+}
+
+.advantages__item:hover h3 {
+  color: $color-alice-blue;
 }
