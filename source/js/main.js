@@ -3,6 +3,7 @@ import {} from './modules/modals/modals';
 import {} from './modules/buttons/info-button';
 import {} from './modules/buttons/state-change';
 import {} from './modules/buttons/scroll-button';
+import {} from './modules/header/header-fixed';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

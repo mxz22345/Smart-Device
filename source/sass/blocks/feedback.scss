@@ -45,9 +45,24 @@
 }
 
 .feedback__img {
+  margin: 0;
   margin-top: 79px;
 
   @media (max-width: $vp-1280) {
+    margin-top: 130px;
+  }
+
+  @media (max-width: $vp-1024) {
+    display: none;
+  }
+}
+
+.feedback__picture {
+  @media (max-width: $vp-1280) {
+    width: 300px;
+  }
+
+  @media (max-width: $vp-1024) {
     display: none;
   }
 }

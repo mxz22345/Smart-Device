@@ -12,7 +12,7 @@
     <link rel="preload" href="../fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" tabindex="0">
       <div class="visually-hidden">
         <svg>
           <symbol viewBox="0 0 20 20" id="icon-email">
@@ -86,12 +86,12 @@
           </symbol>
         </svg>
       </div>
-      <header class="header">
+      <header class="header js-header">
         <div class="header__container container">
           <div class="header__wrapper-logo">
             <a class="header__logo" href="#" aria-label="Переход на главную">
               <picture class="header__picture">
-                <source media="(max-width: 768px)" srcset="img/svg/logo-mobile.svg">
+                <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
                 <source srcset="img/svg/logo.svg">
                 <img class="header__logo-image" src="img/svg/logo.svg" alt="логотип Smart Device" width="215" height="55">
               </picture>
@@ -465,7 +465,7 @@
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <div class="modal-call__wrapper">
           <form class="modal-call__form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="modal-call__fieldset">
+            <fieldset class="modal-call__fieldset" tabindex="1">
                 <input
                   placeholder="Имя"
                   type="text"
