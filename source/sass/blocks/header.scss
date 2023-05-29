@@ -20,11 +20,19 @@
   width: 100%;
   z-index: 10;
   transition: all .2s ease;
+  @media (max-width: $vp-1024) {
+    transition: none;
+    top: 0;
+  }
 }
 
 .header.fixed {
   position: fixed;
   transform: translateY(90px);
+  @media (max-width: $vp-1024) {
+    position: static;
+    transform: none;
+  }
 }
 
 .header__container::before {

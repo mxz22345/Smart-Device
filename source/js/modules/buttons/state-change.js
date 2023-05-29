@@ -11,6 +11,10 @@ copyrightButton.addEventListener('click', () => {
     copyrightList.classList.add('copyright__list--open');
     copyrightIcon.classList.remove('copyright__button-icon--plus');
     copyrightIcon.classList.add('copyright__button-icon--minus');
+    sectionsSiteList.classList.add('sections-site__list--closed');
+    sectionsSiteList.classList.remove('sections-site__list--open');
+    sectionsSiteIcon.classList.add('sections-site__button-icon--plus');
+    sectionsSiteIcon.classList.remove('sections-site__button-icon--minus');
   } else {
     copyrightList.classList.add('copyright__list--closed');
     copyrightList.classList.remove('copyright__list--open');
@@ -25,6 +29,10 @@ sectionsSiteButton.addEventListener('click', () => {
     sectionsSiteList.classList.add('sections-site__list--open');
     sectionsSiteIcon.classList.remove('sections-site__button-icon--plus');
     sectionsSiteIcon.classList.add('sections-site__button-icon--minus');
+    copyrightList.classList.add('copyright__list--closed');
+    copyrightList.classList.remove('copyright__list--open');
+    copyrightIcon.classList.add('copyright__button-icon--plus');
+    copyrightIcon.classList.remove('copyright__button-icon--minus');
   } else {
     sectionsSiteList.classList.add('sections-site__list--closed');
     sectionsSiteList.classList.remove('sections-site__list--open');

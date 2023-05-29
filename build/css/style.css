@@ -1880,6 +1880,20 @@ button,
     min-height: 100px;
   }
 
+  .header {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    top: 0;
+  }
+
+  .header.fixed {
+    position: static;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
   .header__wrapper-logo {
     padding-top: 20px;
     padding-left: 26px;
